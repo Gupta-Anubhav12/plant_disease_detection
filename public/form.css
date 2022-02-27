@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    line-height: 1;
+    width: 100vw;
+    /* background-color: rgb(70, 189, 70); */
+}
+
+.container-img{
+    background-image: url('https://images.unsplash.com/photo-1552761831-7ef8ec07adbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=702&q=80');
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    padding: 32px 24px;
+    width: 70vw;
+}
+
+/* .container-image img{
+    object-fit: cover;
+    width: 40vw;
+    height: 100%;
+} */
+
+.container-form input,.container-form textarea,.container-form button{
+    display: block;
+    padding: 8px;
+    margin: 16px 0px;
+    width: 60vw;
+}
+
+.container-form h1{
+    font-size: 1.8rem;
+    color: #507642;
+}
+
+.field{
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+
+.field:focus{
+    outline: none;
+    background: #d8f3df;
+    border-color: #2ddf5c;
+}
+
+.container-form button{
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(28, 153, 28);
+    cursor: pointer;
+}
+
+.container-form button:active,.container-form button:hover{
+    color: rgb(28, 153, 28);
+    background-color: white;
+    border: 2px solid rgb(28, 153, 28);
+}
+
+
+@media (max-width : 600px){
+    .container{
+        width: 80vw;
+    }
+    .container-form input,.container-form textarea,.container-form button{
+        width: 70vw;
+    }
+}

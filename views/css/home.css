@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    font-family: 'poppins', sans-serif;
+}
+
+::selection{
+    background: #1b1b1b;
+    color: #fff;
+}
+
+
+
+.links-container{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #1b1b1b;
+}
+
+.header{
+    width: 100%;
+    height: calc(100vh - 60px);
+background: url(./blog.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    text-align: center;
+}
+
+.heading{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 80px;
+    line-height: 60px;
+    margin-bottom: 80px;
+}
+
+.heading .small{
+    display: block;
+    font-size: 40px;
+}
+
+.heading .no-fill{
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.blogs-section{
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+
+.blog-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-overview{
+    margin: 10px 0 20px;
+    line-height: 30px;
+}
+
+.btn.dark{
+    background: #1b1b1b;
+    color: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/*card css */
+.blogs-section {
+    font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-block: 3rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.blog-overview{
+    margin: 0 0.4vw;
+}
+
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+bottom: 0;
+}
+
+
+
+
+.btngreen {
+    padding: 6px 6px 6px 6px;
+    background-color: #41c957;
+    color: #fff;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+ position: relative;
+ bottom: 0;
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    color: #fff;
+  }

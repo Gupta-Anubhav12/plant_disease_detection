@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+span{
+    color: #41c957;
+}
+
+
+#main-header{
+    background-color: #daf2d9;
+    padding: 16px 32px;
+}
+
+#brand a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.4rem;
+    padding-left: 24px;
+}
+
+/* .brand__green{
+    color: #41c957;
+} */
+
+
+#main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+#main-nav__list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.main-nav__lists{
+    padding: 1rem;
+}
+
+.main-nav__lists a{
+    text-decoration: none;
+    color: black;
+}
+
+#main-nav__list .login{
+    background: #41c957;
+    padding: 16px 24px;
+    border-radius: 12%;
+}
+
+#main-nav__list .login a{
+   color: white;
+}
+
+#main-intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-info__heading{
+    font-size: 40px;
+}
+
+#main-intro__info , #main-intro__image{
+    padding: 24px 24px;
+}
+
+#main-intro__image img{
+    object-fit: cover;
+    width: 23vw;
+    height: 28vw;
+    border-radius: 6%;
+}
+
+#main-info__join{
+    background-color: #41c957;
+    border: none;
+    outline: none;
+    padding: 8px 24px;
+    margin: 24px 0px 16px;
+    border-radius: 6px;
+}
+#main-info__join a{
+    text-decoration: none;
+    color: white;
+}
+
+#main-info__explore{
+    border: 2px solid #41c957;
+    outline: none;
+    padding: 8px 24px;
+    margin: 24px 16px;
+    border-radius: 6px;
+    color: #41c957;
+}
+
+#discover-plant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 40px;
+}
+
+#discover-plant__heading{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#discover-plant__leaf,#discover-plant__flower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    padding-bottom: 24px;
+}
+
+#discover-leaf__heading,#discover-flower__heading{
+    padding-bottom: 20px;
+}
+
+#discover-leaf__info,#discover-flower__info{
+    padding: 0px 80px;
+}
+
+#discover-leaf__img img,#discover-flower__img img{
+    object-fit: cover;
+    width: 23vw;
+    height: 28vw;
+}
+
+#discover-flower__heading,#discover-leaf__heading{
+    color: darkgreen;
+}
+
+#discover-flower__button,#discover-leaf__button,#discover-disease__button{
+    outline: none;
+    border: none;
+    background-color: #41c957;
+    padding: 8px 24px;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+#discover-flower__button a,#discover-leaf__button a,#discover-disease__button a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#discover-disease{
+    background-color: #daf2d9;
+    padding: 16px 32px;
+    margin-top: 40px;
+}
+
+#discover-disease__heading{
+    font-size: 50px;
+    text-align: center;
+    margin: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#discover-disease__main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#discover-disease__image img{
+    object-fit: cover;
+    width: 23vw;
+    height: 28vw;
+}
+
+#discover-disease__info{
+    padding: 32px 48px;
+}
+
+#plant-info__heading{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#plant-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+#plant-info__card1 ,#plant-info__card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    margin: 0px 32px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+#plant-card2__image img,#plant-card1__image img{
+    object-fit: cover;
+    height: 28vw;
+}
+
+#plant-card1__info,#plant-card2__info{
+    text-align: center;
+}
+
+#plant-blogs{
+    background-color:#daf2d9;
+    margin-top: 50px;
+}
+
+#plant-blogs__heading{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#plant-blogs__main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#plant-blogs__image{
+    padding: 40px;
+}
+
+#plant-blogs__info{
+    padding: 40px;
+}
+
+#plant-blogs__image img{
+    object-fit: cover;
+    width: 23vw;
+    height: 23vw;
+    border-radius: 6px;
+}
+
+#blog-info__button{
+    outline: none;
+    border: none;
+    background-color: #41c957;
+    padding: 8px 24px;
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+#blog-info__button a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+/* media query */
+@media (max-width: 50rem){
+
+      #main-intro{
+          flex-direction: column-reverse;    
+      }
+
+      #main-intro__image img{
+          width: 45vw;
+          height: 45vw;
+      }
+
+      #discover-leaf__img img,#discover-flower__img img,#discover-disease__image img{
+          width: 35vw;
+          height: 35vw;
+      }
+
+      #discover-plant__leaf{
+          flex-direction: column;
+          text-align: center;
+      }
+      #discover-plant__flower{
+          flex-direction: column-reverse;
+          text-align: center;
+      }
+
+      #discover-disease__main{
+          flex-direction: column;
+          text-align: center;
+      }
+
+      #plant-info{
+          flex-direction: column;
+          align-items: center;
+      }
+
+      #plant-blogs__main{
+          flex-direction: column;
+          text-align: center;
+      }
+      #plant-blogs__image img{
+        width: 40vw;
+        height: 40vw;
+      }
+
+      #discover-plant__heading,#discover-disease__heading,#plant-info__heading,#plant-blogs__heading{
+          font-size: 44px;
+      }
+}
+
+@media (max-width: 500px){
+    #main-intro__image img,#plant-blogs__image img,#discover-leaf__img img,#discover-flower__img img,#discover-disease__image img,
+    #plant-card1__image img,#plant-card2__image img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #plant-blogs__image{
+        padding-bottom: 0;
+    }
+
+    #discover-plant__heading,#discover-disease__heading,#plant-info__heading,#plant-blogs__heading{
+        font-size: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    #plant-blogs__heading{
+        margin-bottom: 0;
+    }
+    .width{
+        width: 80vw;
+    }
+}

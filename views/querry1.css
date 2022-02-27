@@ -1,0 +1,22 @@
+@media (max-width: 1200px) {
+  .main {
+    font-size: 8rem;
+  }
+  .main p {
+    font-size: 2rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .main {
+    font-size: 6.5rem;
+  }
+  .main p {
+    font-size: 3rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/home/yash/Documents/plant_info/views/CSS/style.css        " />
+    <link rel="stylesheet" href="/home/yash/Documents/plant_info/views/CSS/querry.css" /> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 10rem;
+  }
+  img {
+    width:  100%;
+    height: 80%;
+    object-fit: cover;
+}
+  .main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(https://media.istockphoto.com/photos/background-comprised-of-small-green-leaves-picture-id182794428);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12rem;
+    padding-top: 20rem;
+    padding-bottom: 2rem;
+    margin-bottom: 10rem;
+  }
+  .main p {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 3.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .box {
+    margin: 2rem;
+    height: 11rem;
+    background-color: #00a21e;
+    margin-top: 10rem;
+  }
+  
+  .container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .meal-img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .meal-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  .meal {
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.2s;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+  .meal:hover {
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+    transform: translate(0, -1.2rem);
+  }
+  .btn {
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    display: inline-block;
+    border: 0;
+    transition: all 300ms;
+    background-color: #00a31ecc;
+    width: 100%;
+    color: #00a31e;
+    background-color: white;
+    padding: 2rem;
+  }
+  .btn:hover {
+    color: #006913;
+  }
+  @media (max-width: 1200px) {
+    .main {
+      font-size: 8rem;
+    }
+    .main p {
+      font-size: 2rem;
+    }
+    .grid--3-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 800px) {
+    .main {
+      font-size: 6.5rem;
+    }
+    .main p {
+      font-size: 3rem;
+    }
+    .grid--3-cols {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+      </style>
+  </head>
+  <body>
+    <header class="heading">
+      <h1 class="main">
+        Dont Know What To Plant ?<br />
+        <p>
+            Find Out Here!
+        </p>
+      </h1>
+    </header>
+    <div class="container grid grid--3-cols margin-bottom-md">
+        <% for (let i = 0; i < plant_info.length; i++) { %> 
+      <div class="meal">
+        <img src=<%=plant_info[i]['image-links']%> id="img" alt="Japanese Gyozas" />
+        <div class="meal-content">
+          <form
+            action=  <%="/"+plant_info[i].Name.trim()%>
+            method="get"
+            class="col s12"
+            enctype="multipart/form-data"
+          >
+            <button class="btn btn--form" onclick=""><%=plant_info[i].Name%></button>
+          </form>
+        </div>
+      </div>
+      <% } %> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <title>Blog : Editor</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">PLANT<span>ZONE</span></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu" id="menubar">
+            <li><a href="/" class="buttonnav active">Home</a></li>
+            <li><a href="#aboutid" class="buttonnav">About</a></li>
+            <li><a href="/home" class="buttonnav">Blogs</a></li>
+            <li class="services">
+              <a href="/" class="buttonnav">Services</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="./flower-app (1).html">Flower App</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+              </ul>
+            </li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="./editor.html" id="btn" class="buttonnav">Write a Blog..</a></li>
+          </div>
+        </ul>
+      </nav>
+    <div class="banner">
+        <input type="file" accept="image/*" id="banner-upload" hidden>
+        <div class="click">click here to upload</div>
+        <label for="banner-upload" class="banner-upload-btn"> <img src="images/upload.png" alt="upload banner"></label>
+    </div>
+    
+    <div class="blog">
+        <textarea type="text" class="title" placeholder="Blog title..."></textarea>
+        <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
+    </div>
+
+    <div class="blog-options">
+        <button class="btn buttons publish-btn" id="btn">publish</button>
+        <input type="file" accept="image/*" id="image-upload" hidden>
+        <label for="image-upload" class="btn buttons upload-btn">Upload Image</label>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/editor.js"></script>
+
+</body>
+</html>
