@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
- 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-    <title>PlantZone</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>FARM HELP. BCM ARYA</title>
 </head>
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/contact.css">
 <link rel="stylesheet" href="./css/shared.css">
 
-<link
-href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shippori+Antique&display=swap" rel="stylesheet">
-<script
-type="module"
-src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-nomodule
-src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shippori+Antique&display=swap"
+  rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./js/email.js"></script>
+
 <body>
   <nav class="navbar">
     <!-- LOGO -->
@@ -41,7 +35,9 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       <!-- NAVIGATION MENUS -->
       <div class="menu" id="menubar">
         <li><a href="/" class="buttonnav active">Home</a></li>
-        
+        <li><a href="https://esp-firebase-demo-4f83b.web.app/" class="buttonnav active">MOISTURE AND PUMP MONITOR</a>
+        </li>
+
         <!-- <li><a href="/blog_home.html" class="buttonnav">Blogs</a></li>
         <li><a href="./form.html" class="buttonnav" target="_blank">Contribute</a></li>
         <li><a href="/about.html">Contact</a></li>
@@ -50,80 +46,51 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     </ul>
   </nav>
   <section>
-    <div class="top-intro">
-      <div class="text">
-      <div class="slogan">
-        Join Us and make the world green !
-      </div>
-      <div class="para">
-        “Around 1 million animal and plant species are threatened with extinction – many within decades “ says the 2019 Global Assessment Report on Biodiversity and Ecosystem Service.
-        Plants are the necessary and vital part of our planets overall health. The health of our planet also plays an important role in the emergence of zoonotic diseases, i.e. diseases that are transmissible between animals and humans as the world has seen in last two years.
-        We here at PlantZone pvt ltd. building technologies that are helping in creating an caring and supportive ecosystem between plants and humans. Join our community today to be a part of this little initiative to make the planet greener and healthier.
-      </div>
-      <div class="button">
-      <div class="join"><a href="./about.html">About Us</a></div>
-      <div class="work-tut">
-        <a href="">See how it works --></a>
-      </div>
-      </div>
-</div>
-<div class="image">
-  <img src="./images/image1.jpg" alt="plant image">
-</div>
-    </div>
+   
 
   </section>
   <!-- Discover plant thru lead and flower section -->
   <h1 id="plant-info__heading">What should we<span> Plant ?</span></h1>
   <div id="plant-info">
-      <div id="plant-info__card1">
-          <div id="plant-card1__image">
-              <img src="./images/searching.png">
-          </div>
-          <div id="plant-card1__info">
-              <h1>Discover Plants</h1>
-              <p class="width">
-                Discover different plant species and know about them!!
-                Learn about how and what plants to grow in specific environmental conditions.
-                Search a wide variety of plants for your home, office, garden, workplace decor etc with the help of our dynamic and up to date database.
-           
-              </p>
-                <form
-            action=  "/plant_info_page"
-            method="get"
-            class="col s12"
-            enctype="multipart/form-data"
-          >
-          <button>Try this</button> 
-              </form>
-
-          </div>
+    <div id="plant-info__card1">
+      <div id="plant-card1__image">
+        <img src="./images/searching.png">
       </div>
-      <div id="plant-info__card2">
-          <div id="plant-card2__image">
-              <img src="./images/gardening.png">
-          </div>
-          <div id="plant-card2__info">
-              <h1>Grow Best</h1>
-              <p class="width">
-                Learn about the suitable conditions, necessary micronutrients and minerals for optimal growth of the plant from 100% trusted and reliable sources.
-              </p>
-                <form
-            action=  "/plant_info_page"
-            method="get"
-            class="col s12"
-            enctype="multipart/form-data"
+      <div id="plant-card1__info">
+        <h1>Discover Plants</h1>
+        <p class="width">
+          Discover different plant species and know about them!!
+          Learn about how and what plants to grow in specific environmental conditions.
+          Search a wide variety of plants for your home, office, garden, workplace decor etc with the help of our
+          dynamic and up to date database.
 
-          >
-          <button>Try this</button> 
-              </form>
+        </p>
+        <form action="/plant_info_page" method="get" class="col s12" enctype="multipart/form-data">
+          <button>Try this</button>
+        </form>
 
-          </div>
       </div>
+    </div>
+    <div id="plant-info__card2">
+      <div id="plant-card2__image">
+        <img src="./images/gardening.png">
+      </div>
+      <div id="plant-card2__info">
+        <h1>Grow Best</h1>
+        <p class="width">
+          Learn about the suitable conditions, necessary micronutrients and minerals for optimal growth of the plant
+          from 100% trusted and reliable sources.
+        </p>
+        <form action="/plant_info_page" method="get" class="col s12" enctype="multipart/form-data">
+          <button>Try this</button>
+        </form>
+
+      </div>
+    </div>
   </div>
   <!-- <h1 id="discover-plant__heading">Discover <span>Plants</span></h1> -->
 
-      <!-- <div id="discover-plant__flower">
+  <!-- <div id="discover-plant__flower">
           <div id="discover-flower__info">
               <h1 id="discover-flower__heading">
                   Discover through flower
@@ -139,40 +106,38 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       </div> -->
   </div>
 
-<!-- Discover Disease section  -->
-<main>
-  <div id="discover-disease">
+  <!-- Discover Disease section  -->
+  <main>
+    <div id="discover-disease">
       <h1 id="discover-disease__heading"><span>Discover</span> Disease</h1>
       <div id="discover-disease__main">
-          <div id="discover-disease__image">
-              <img src="./images/leafdisease.png">
-          </div>
-      <div id="discover-disease__info">
+        <div id="discover-disease__image">
+          <img src="./images/leafdisease.png">
+        </div>
+        <div id="discover-disease__info">
           <h1 id="disease-info__heading">Scan the Leaf</h1>
           <p class="width">
-            With our powerful and advanced AI based algorithms you can search about the plant disease by scanning the leaves. It disheartens to see plants dying in the garden. Identifying a disease is not very easy for a layman. We need something easy to follow rather than just a book. With the help of this website you can ensure your little garden’s health 🧡🧡.
+            With our powerful and advanced AI based algorithms you can search about the plant disease by scanning the
+            leaves. It disheartens to see plants dying in the garden. Identifying a disease is not very easy for a
+            layman. We need something easy to follow rather than just a book. With the help of this website you can
+            ensure your little garden’s health 🧡🧡.
           </p>
           <div id="plant-card2__info">
-            <form
-            action= "/choose_model"
-            method="get"
-            class="col s12"
-            enctype="multipart/form-data"
-          >
-          <button href="/blog_home.html">Try this</button>
-              </form>
-              </div>  
-              
+            <form action="/choose_model" method="get" class="col s12" enctype="multipart/form-data">
+              <button href="/blog_home.html">Try this</button>
+            </form>
+          </div>
+
+        </div>
       </div>
-      </div>
-  </div>
+    </div>
 
-  <!-- Plant info -->
+    <!-- Plant info -->
 
 
-  <!--blogs-->
-        <!--blogs-->
-        <!-- <div id="plant-blogs">
+    <!--blogs-->
+    <!--blogs-->
+    <!-- <div id="plant-blogs">
           <h1 id="plant-blogs__heading"><span>Write </span> Blogs</h1>
           <div id="plant-blogs__main">
               <div id="plant-blogs__image">
@@ -188,138 +153,38 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
                   </button>
               </div>
           </div> -->
-      </div>
-
-
-</main>
-  <div class="container" id="contactid">
-    <span class="big-circle"></span>
-    <div class="form">
-      <div class="contact-info">
-        <h3 class="title">Let's get in touch</h3>
-        <p class="text">
-          You can also write suggestions and feedbacks to our community and help us to improve. Lets  make this initiative grow together with the help and support of people who care about this world.
-        </p>
-
-        <div class="info">
-          <div class="information">
-            <i class="fa fa-map-marker fa-2x infoicon"></i>
-            <p>NIT jalandhar</p>
-          </div>
-          <div class="information">
-            <i class="fa fa-envelope fa-2x infoicon"></i>
-            <p>sushantdhuria123@gmail.com</p>
-          </div>
-          <div class="information">
-            <i class="fa fa-phone fa-2x infoicon"></i>
-            <p>123-456-789</p>
-          </div>
-        </div>
-
-        <div class="social-media">
-          <p>Connect with us :</p>
-          <div class="social-icons">
-            <a href="#">
-              <i class="fa fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="contact-form">
-        <span class="circle one"></span>
-        <span class="circle two"></span>
-
-        <form
-          method="POST"
-          action="index.html"
-          autocomplete="off"
-          id="contact"
-        >
-          <h3 class="title">Contact us</h3>
-          <div class="input-container">
-            <input
-              type="text"
-              name="name"
-              class="input"
-              id="username"
-              placeholder="Username"
-              required
-            />
-          </div>
-          <div class="input-container">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="input"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="input-container">
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              class="input"
-              placeholder="Phone"
-            />
-          </div>
-          <div class="input-container textarea">
-            <textarea
-              name="message"
-              class="input"
-              id="message"
-              placeholder="Message..."
-              required
-            ></textarea>
-          </div>
-          <input
-            type="button"
-            class="btn"
-            value="Send Email"
-            onclick="sendEmail()"
-          />
-        </form>
-      </div>
     </div>
-  </div>
-<footer>
-  <div class="footer-content">
-    <!--add all information -->
-    <h3>PlantZone</h3>
-    <p>Developed by Phod Denge</p>
-    <ul class="socials">
-      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-   </ul>
-</div>
-<div class="footer-bottom">
-  <!-- add all information -->
-  <p>copyright &copy;2022 <a href="#">Phod Denge</a>  </p>
-  <div class="footer-menu">
-    <ul class="f-menu">
-       <!-- <li><a href="/">Home</a></li>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <!--add all information -->
+      <h3>Farming Automation</h3>
+      <p>BCM Arya Model Sr Sec School Ludhiana</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <!-- add all information -->
+      <p>copyright &copy;2022 <a href="#">BCM Arya</a> </p>
+      <div class="footer-menu">
+        <ul class="f-menu">
+          <!-- <li><a href="/">Home</a></li>
        <li><a href="./about.html">About</a></li>
        <li><a href="#contactid">Contact</a></li>
        <li><a href="./home.html">Blog</a></li> -->
-    </ul>
-   </div>
-  </div>
-</footer>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script src="js/firebase.js"></script>
-     <script src="./main.js"></script>
+  <script src="./main.js"></script>
 </body>
+
 </html>
